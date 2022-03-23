@@ -1,0 +1,47 @@
+root {
+    --just-black: #000000;
+    --just-white: #FFFFFF;
+    --principal-font: 'Rubik', sans-serif;
+    --secundary-font: 'Roboto', sans-serif;
+    
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url("../assets/images/background-image-home.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 12px 0 12px;
+    margin-bottom: 24px;
+}
+
+header nav .logo img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    
+}
+header nav .btn-header button{
+    border: 1px solid white;
+    font-family: var(--secundary-font);
+    color: white;
+    background-color: transparent;
+    border-radius: 8px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+}
+
+header nav .btn-header button:hover {
+    box-shadow: 0 0 10px #CC0361, 0 0 40px #CC0361, 0 0 80px #CC0361;
+}
