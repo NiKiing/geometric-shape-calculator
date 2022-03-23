@@ -3,7 +3,7 @@
     --just-black: #000000;
     --just-white: #FFFFFF;
     --principal-font: 'Rubik', sans-serif;
-    --secundary-font: 'Roboto Mono', monospace;
+    --secundary-font: 'Roboto', sans-serif;
     
 }
 
@@ -15,7 +15,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: auto;
 }
 
 header nav {
@@ -23,12 +23,14 @@ header nav {
     justify-content: space-between;
     align-items: center;
     padding: 12px 12px 0 12px;
+    margin-bottom: 24px;
 }
 
 header nav .logo img {
     width: 40px;
     height: 40px;
     object-fit: cover;
+    
 }
 header nav .btn-header button{
     border: 1px solid white;
@@ -38,8 +40,91 @@ header nav .btn-header button{
     border-radius: 8px;
     width: 100px;
     height: 40px;
+    cursor: pointer;
 }
 
 header nav .btn-header button:hover {
     box-shadow: 0 0 10px #CC0361, 0 0 40px #CC0361, 0 0 80px #CC0361;
 }
+
+/* MAIN */
+
+.container-fsection {
+    /* width: 100%; */
+    display: grid;
+    grid-template-rows: 1fr 200px;
+    gap: 20px;
+    place-items: center;
+}
+.container-fsection h1 {
+    color: white;
+    font-family: var(--principal-font);
+    font-size: 50px;
+    text-align: center;
+}
+.container-fsection .geometric-icons--fsection{
+    position: relative;
+    width: 300px;
+    height: 240px;
+    
+}
+.container-fsection .geometric-icons--fsection img {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+}
+.container-fsection .geometric-icons--fsection img:nth-child(1){
+    left: -10px;
+    
+    
+}
+.container-fsection .geometric-icons--fsection img:nth-child(2){
+    left: 120px;
+    z-index: -1;
+    
+}
+.container-fsection .geometric-icons--fsection img:nth-child(3){
+    top: 25px;
+    left: 30px;
+    width: 240px;
+    height: 240px;
+}
+
+.container-fsection .btn-home {
+    margin: 36px 0 36px 0;
+    height: 48px;
+    width: 128px;
+    border-radius: 20px;
+    border: none;
+    font-family: var(--secundary-font);
+    cursor: pointer;
+
+}
+
+.container-fsection .btn-home:hover {
+    box-shadow: 0 0 10px #CC0361, 0 0 40px #CC0361, 0 0 80px #CC0361;
+}
+
+
+
+
+
+
+
+/* .container-fsection .geometric-icons--fsection img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+.container-fsection .geometric-icons--fsection img:nth-child(2){
+    left: 140px;
+    z-index: -1;
+    
+}
+.container-fsection .geometric-icons--fsection img:nth-child(3){
+    top: 40px;
+    left: 60px;
+    width: 250px;
+    height: 250px;
+} */
+
