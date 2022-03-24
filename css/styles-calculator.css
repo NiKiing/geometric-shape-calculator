@@ -33,7 +33,7 @@ header nav .logo img {
 }
 header nav .btn-header button{
     border: 1px solid black;
-    font-family: var(--secundary-font);
+    font-family: 'Rubik', sans-serif;
     color: black;
     background-color: transparent;
     border-radius: 8px;
