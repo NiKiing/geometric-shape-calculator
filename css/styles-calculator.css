@@ -10,11 +10,11 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-image: url("../assets/images/background-image-home.png");
+    /* background-image: url("../assets/images/background-image-home.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: auto;
+    height: auto; */
 }
 
 header nav {
@@ -32,9 +32,9 @@ header nav .logo img {
     
 }
 header nav .btn-header button{
-    border: 1px solid white;
+    border: 1px solid black;
     font-family: var(--secundary-font);
-    color: white;
+    color: black;
     background-color: transparent;
     border-radius: 8px;
     width: 100px;
@@ -44,4 +44,92 @@ header nav .btn-header button{
 
 header nav .btn-header button:hover {
     box-shadow: 0 0 10px #CC0361, 0 0 40px #CC0361, 0 0 80px #CC0361;
+}
+main .container-title{
+    margin-top: 24px;
+    margin-bottom: 48px;
+}
+main .container-title h2{
+    font-family: 'Rubik', sans-serif;
+    font-size: 36px;
+    text-align: center;
+}
+
+main .container-title p {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 28px;
+}
+
+main .main-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-items: center;
+    margin: 0 auto;
+    gap: 20px;
+   max-width: 1259px;
+
+}
+main .tarjet-content{
+    width: 300px;
+    height: 350px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+main .tarjet-content .title--tarjet{
+    display: flex;
+    place-items: center;
+    margin: 12px 0 8px 24px;
+}
+
+main .tarjet-content .title--tarjet i {
+    margin-right: 8px;
+}
+
+main .tarjet-content .title--tarjet h2 {
+    font-family:'Rubik', sans-serif;
+    font-weight: 300;
+}
+
+main .tarjet-content .form-container form{
+    margin: 12px 0 8px 24px;
+    
+}
+main .tarjet-content .form-container form label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    
+}
+main .tarjet-content .form-container form input {
+    margin: 18px 10px 26px 0;
+    border: 1px solid black;
+    border-radius: 7px;
+    height: 26px;
+    
+}
+
+main .tarjet-content .form-container form span {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+main .tarjet-content .form-container form button {
+    height: 40px;
+    width: 120px;
+    margin-right: 8px;
+    border-radius: 14px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+
+}
+
+main .tarjet-content  .answer {
+    width: 250px;
+    height: 40px;
+    margin: 24px auto 0 auto;
+    border: 1px solid black;
+    border-radius: 14px;
 }
