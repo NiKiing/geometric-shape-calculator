@@ -23,11 +23,11 @@
     <main>
         <section class="container-title">
             <h2>Geometric shape Calculator</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum omnis quisquam tenetur ratione.</p>
+            <p>Here you can get the area, perimeter, or diameter (Circle case). Depending of the measure of the geometric figure :)</p>
         </section>
         <section class="main-container">
             <!-- Tarjet N1 -->
-            <div class="t-content">
+            <div class="t-content t-content-square">
                 <div class="title--t">
                     <i class="fa-regular fa-square fa-2x"></i>
                     <h2>Square</h2>
@@ -40,8 +40,8 @@
                         <div class="input--t">
                             <input id="InputCuadrado" type="number"><span>cm</span>
                         </div>
-                        <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perimetro</button>
-                        <button type="button" onclick="calcularAreaCuadrado()">Calcular el area</button>
+                        <button type="button" onclick="calcularPerimetroCuadrado()">Get Perimeter</button>
+                        <button type="button" onclick="calcularAreaCuadrado()">Get area</button>
                     </form>
                 </div>
                 <div class="answer">
@@ -85,7 +85,7 @@
                 </div>
             </div>
             <!-- Tarjet N3 -->
-            <div class="t-content">
+            <div class="t-content t-content-circle">
                 <div class="title--t">
                     <i class="fa-regular fa-circle fa-2x"></i>
                     <h2>Circle</h2>
@@ -109,7 +109,9 @@
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer class="main-content-footer">
+        <span>@NiKiing</span>
+    </footer>
     <script src="./js/shape-calculator.js"></script>
     <script src="https://kit.fontawesome.com/e433613099.js" crossorigin="anonymous"></script>
 </body>
