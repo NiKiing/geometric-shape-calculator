@@ -25,10 +25,8 @@ function perimetroTriangulo(ladoTriangulo_1, ladoTriangulo_2, baseTriangulo){
 
 
 
-function areaTriangulo(base, altura){
-    
-    return (base * altura) / 2;
-
+function areaTriangulo(base, altura) {
+  return (base * altura) / 2;
 }
 
 console.groupEnd();
@@ -96,22 +94,28 @@ function calcularAreaCuadrado(){
 // Triangulo
 
 function calcularPerimetroTriangulo(){
-    const input = document.getElementById("InputTriangulo");
-    const value = input.value;
+    const input = document.getElementById("InputTrianguloSideA");
+    const input2 = document.getElementById("InputTrianguloSideB");
+    const input3 = document.getElementById("InputTrianguloBase");
+    const value = Number(input.value);
+    const value2 = Number(input2.value);
+    const value3 = Number(input3.value)
 
 
-    const perimetro = perimetroTriangulo(value);
-    document.getElementById('lbResultado').innerHTML = perimetro + "cm2";
+    const perimetroT = perimetroTriangulo(value,value2,value3);
+    document.getElementById('lb2Resultado').innerHTML = perimetroT + "cm2";
     
 }
 
 function calcularAreaTriangulo(){
-    const input = document.getElementById("InputTriangulo");
-    const value = input.value;
+    const input = document.getElementById("InputTrianguloBase");
+    const input2 = document.getElementById("InputTrianguloHeight");
+    const value = Number(input.value);
+    const value2 = Number(input2.value);
 
 
-    const area = areaTriangulo(value);
-    document.getElementById('lbResultado').innerHTML = area + "cm2";
+    const areaT = areaTriangulo(value,value2);
+    document.getElementById('lb2Resultado').innerHTML = areaT + "cm2";
 }
 
 
@@ -119,23 +123,23 @@ function calcularDiametroCirculo(){
     const input = document.getElementById("InputCirculo");
     const value = input.value;
 
-    const diametro = diametroCirculo(value);
-    document.getElementById('lb1Resultado').innerHTML = diametro + "cm2";
+    const diametroC = diametroCirculo(value);
+    document.getElementById('lb3Resultado').innerHTML = diametroC + "cm2";
 }
 
 function calcularPerimetroCirculo() {
     const input = document.getElementById("InputCirculo");
     const value = input.value;
 
-    const perimetro = circunferenciaCirculo(value);
+    const perimetroC = circunferenciaCirculo(value);
 
-    document.getElementById('lb1Resultado').innerHTML = perimetro + "cm2";
+    document.getElementById('lb3Resultado').innerHTML = perimetroC + "cm2";
 }
 
 function calcularAreaCirculo(){
     const input = document.getElementById("InputCirculo");
     const value = input.value;
 
-    const area = areaCirculo(value);
-    document.getElementById('lbResultado').innerHTML = area + "cm2";
+    const areaC1 = areaCirculo(value);
+    document.getElementById('lb3Resultado').innerHTML = areaC1 + "cm2";
 }
