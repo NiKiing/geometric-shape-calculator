@@ -71,50 +71,106 @@ main .main-container{
    max-width: 1259px;
 
 }
-main .tarjet-content{
+main .t-content{
     width: 300px;
     height: 350px;
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+main .t-content-triangle{
+    width: 300px;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 
-main .tarjet-content .title--tarjet{
+main .t-content .title--t{
     display: flex;
     place-items: center;
     margin: 12px 0 8px 24px;
 }
-
-main .tarjet-content .title--tarjet i {
+.icon--t {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+main .t-content .title--t i {
     margin-right: 8px;
 }
 
-main .tarjet-content .title--tarjet h2 {
+main .t-content .title--t h2 {
     font-family:'Rubik', sans-serif;
     font-weight: 300;
 }
 
-main .tarjet-content .form-container form{
+main .t-content .form-container form{
     margin: 12px 0 8px 24px;
     
 }
-main .tarjet-content .form-container form label {
+main .t-content .form-container form label {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     
 }
-main .tarjet-content .form-container form input {
+main .t-content .form-container form input {
     margin: 18px 10px 26px 0;
     border: 1px solid black;
     border-radius: 7px;
-    height: 26px;
+    height: 35px;
     
 }
+main .t-content .form-container .input--t{
+    position: relative;
+}
+main .t-content .form-container .input--t .put--t-n1 {
+    position: absolute;
+    top: 5px;
+    background-color: white;
+    font-size: 15px;
+    font-family:'Roboto', sans-serif;
+    padding: 3px;
+    margin: 0;
+}
 
-main .tarjet-content .form-container form span {
-    font-size: 18px;
+main .t-content .form-container .input--t .put--t-n2 {
+    position: relative;
+    font-size: 15px;
+    font-family:'Roboto', sans-serif;
+    left: -219px;
+    top: 50px;
+    background-color: white;
+    padding: 0 3px 0 3px;
+    margin: 0;
+}
+main .t-content .form-container .input--t .put--t-n3 {
+    position: relative;
+    font-size: 15px;
+    font-family:'Roboto', sans-serif;
+    left: -218px;
+    top: 50px;
+    background-color: white;
+    padding: 0 3px 0 3px;
+    margin: 0;
+}
+main .t-content .form-container .input--t .put--t-n4{
+    position: relative;
+    font-size: 15px;
+    font-family:'Roboto', sans-serif;
+    left: -218px;
+    top: 50px;
+    background-color: white;
+    padding: 0 3px 0 3px;
+    margin: 0;
+}
+main .t-content-triangle .form-container form input{
+    margin: 16px 10px 14px 0;
+}
+
+main .t-content .form-container form span {
+    font-size: 15px;
     font-family: 'Roboto', sans-serif;
 }
-main .tarjet-content .form-container form button {
+main .t-content .form-container form button {
     height: 40px;
     width: 120px;
     margin-right: 8px;
@@ -126,10 +182,14 @@ main .tarjet-content .form-container form button {
 
 }
 
-main .tarjet-content  .answer {
+main .t-content  .answer, .answer-triangle{
     width: 250px;
     height: 40px;
     margin: 24px auto 0 auto;
     border: 1px solid black;
     border-radius: 14px;
+}
+
+main .t-content .answer-triangle{
+    margin-bottom: 24px;
 }
