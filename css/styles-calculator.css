@@ -16,7 +16,7 @@ header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 12px 0 12px;
+    padding: 12px 40px 0 40px;
     margin-bottom: 24px;
 }
 
@@ -220,4 +220,12 @@ main .t-content  .answer span{
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
     color: white;
+}
+
+.main-content-footer a {
+    color: white;
+}
+
+.main-content-footer a:hover{
+    color: #072251;
 }
